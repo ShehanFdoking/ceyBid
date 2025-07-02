@@ -1,0 +1,134 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    color: #333;
+  }
+
+.header {
+    background-color: #34495e;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.header h1 {
+    margin: 0;
+    
+    font-size: 28px;
+    text-align: center;
+    
+}
+
+.header p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #ecf0f1;
+    text-align: center;
+}
+
+.nav {
+    background-color: #34495e;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding:5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    left:40;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+}
+
+.search-container {
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 14px;
+    width: 200px;
+}
+
+.search-button {
+    padding: 8px 15px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #e67e22;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+/* Dropdown Style */
+.nav-links .dropdown {
+    position: relative;
+}
+
+.nav-links .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+.nav-links .dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+}
+
+.nav-links .dropdown:hover .dropdown-menu {
+    display: block;
+}
+

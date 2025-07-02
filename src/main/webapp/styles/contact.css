@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+/* CONTACT INFO SECTION */
+.contact-info-section {
+    background-color: #a7abb0f9;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-info-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.info-columns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.info-box {
+    flex: 1 1 250px;
+    margin: 15px;
+}
+
+.info-box i {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #f39c12;
+}
+
+.info-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 14px;
+}
+
+/* MESSAGE US FORM */
+.message-form-section {
+    background-color: #fff;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.message-form-section h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.message-form-section form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.message-form-section form textarea {
+    grid-column: span 2;
+    resize: vertical;
+    min-height: 120px;
+}
+
+.message-form-section input,
+.message-form-section textarea {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.message-form-section button {
+    grid-column: span 2;
+    padding: 12px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.message-form-section button:hover {
+    background-color: #e67e22;
+}
+
+footer {
+    background-color: #34495e;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+

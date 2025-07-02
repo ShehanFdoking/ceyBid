@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+  <display-name>comevent</display-name>
+  <welcome-file-list>
+    <welcome-file>categoryinsert.jsp</welcome-file>
+
+  </welcome-file-list>
+  
+
+	<servlet>
+		<servlet-name>categoryinsert</servlet-name>
+		<servlet-class>com.category.CategoryInsert</servlet-class>
+	</servlet>  
+	<servlet-mapping>
+		<servlet-name>categoryinsert</servlet-name>
+		<url-pattern>/insert</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updatecategory</servlet-name>
+		<servlet-class>com.category.UpdateCategoryServlet</servlet-class>
+	</servlet>  
+	<servlet-mapping>
+		<servlet-name>updatecategory</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	 
+	 <servlet>
+		<servlet-name>deletecategory</servlet-name>
+		<servlet-class>com.category.DeleteCategoryServlet</servlet-class>
+	</servlet>  
+	<servlet-mapping>
+		<servlet-name>deletecategory</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<!-- Servlet for Customer Insert (Create) -->
+    
+
+    <!-- Servlet for Customer Update (Update) -->
+    
+    
+    <servlet>
+        <servlet-name>DisplayItems</servlet-name>
+        <servlet-class>buyer.DisplayItemsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisplayItems</servlet-name>
+        <url-pattern>/display</url-pattern>
+    </servlet-mapping>
+	
+	</web-app>    
